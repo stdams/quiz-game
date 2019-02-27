@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+</head>
+<body>
+    <form name="myform">
+        Q1. what is the capital of Nigeria?<br>
+        <input type= "radio" name="q1" value="a">Delhi</br>
+        <input type= "radio" name="q1" value="b">Abuja</br>
+        <input type= "radio" name="q1" value="c">Kwara</br><br>
+
+        Q2. How Old is Nigeria?<br>
+        <input type= "radio" name="q2" value="a">55</br>
+        <input type= "radio" name="q2" value="b">56</br>
+        <input type= "radio" name="q2" value="c">65</br><br>
+
+        Q3. On what continent is Nigeria?<br>
+        <input type= "radio" name="q3" value="a">Africa</br>
+        <input type= "radio" name="q3" value="b">Abuja</br>
+        <input type= "radio" name="q3" value="c">Asia</br><br>
+
+        <input type="button" value="submit" onclick= "check()">
+    </form>
+
+<script>
+    var check = function() {
+         var q1=document.myform.q1.value;
+        var q2=document.myform.q2.value;
+        var q3=document.myform.q3.value;
+        var count=0;
+
+        if(q1=="b"){
+            count++;
+        }
+        if(q2=="b"){
+            count++;
+        }
+        if(q3=="a"){
+            count++;
+        }
+    alert(`you got ${count} marks`)
+    }
+</script>
+</body>
+</html>
